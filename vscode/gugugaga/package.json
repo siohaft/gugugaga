@@ -1,0 +1,57 @@
+{
+    "name": "gugugaga",
+    "displayName": "Gugugaga",
+    "description": "Syntax highlighting and execution support for the Gugu programming language",
+    "version": "0.1.0",
+    "publisher": "gugugaga",
+    "icon": "icon.png",
+    "main": "./extension.js",
+    "engines": {
+        "vscode": "^1.90.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "gugu",
+                "aliases": [
+                    "Gugu",
+                    "gugu"
+                ],
+                "extensions": [
+                    ".gugu"
+                ],
+                "icon": {
+                    "light": "./icon.png",
+                    "dark": "./icon.png"
+                },
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "gugu",
+                "scopeName": "source.gugu",
+                "path": "./syntaxes/gugu.tmLanguage.json"
+            }
+        ],
+        "commands": [
+            {
+                "command": "gugugaga.runFile",
+                "title": "Run Gugu File",
+                "icon": "$(play)"
+            }
+        ],
+        "menus": {
+            "editor/title": [
+                {
+                    "command": "gugugaga.runFile",
+                    "when": "editorLangId == gugu",
+                    "group": "navigation"
+                }
+            ]
+        }
+    }
+}

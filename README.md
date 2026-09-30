@@ -1,0 +1,379 @@
+# Gugugaga
+
+<p align="center">
+  <!-- <img src="icon-raw.png" width="128" alt="Gugu"> -->
+  <img src="icon-raw.png" alt="Gugu">
+</p>
+
+<p align="center">
+  A small programming language with its own syntax, tooling, and personality.
+</p>
+
+<!-- --- -->
+
+## About
+
+**Gugugaga (e.g. Gugu)** is a small programming language designed to be simple, expressive, and distinctive.
+
+It has its own syntax, keywords, data types, classes, decorators, modules, and a dedicated VS Code extension.
+
+Source files use the `.gugu` extension.
+
+The Gugugaga programming language is based on python.
+
+## Example
+
+```gugu
+gugu hello(name):
+    gu(f"Hello, {name}!")
+
+gua name = gug("What's your name? ")
+hello(name)
+```
+
+Run it with:
+
+```bash
+gugu hello.gugu
+```
+
+## Installation
+
+### PyPI Installation
+
+The recommended way to install Gugu is through PyPI:
+
+```bash
+python -m pip install gugugaga
+```
+
+Once installed, if you have a Gugu file, you can run Gugu with:
+
+```bash
+gugu <your-file-name>.gugu
+```
+
+If You don't have a gugu file, You can just make one.
+
+### Manual Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/siohaft/gugugaga.git
+cd gugugaga
+```
+
+Install the project:
+
+```bash
+python -m pip install .
+```
+
+You can then run Gugu with:
+
+```bash
+gugu examples/hello.gugu
+```
+
+## Features
+
+- Functions and classes
+- Variables and multiple assignment
+- `if`, `elif`, and `else`
+- `for` and `while` loops
+- `break` and `continue`
+- Boolean and logical operators
+- Built-in data types and functions
+- Modules and imports
+- Import aliases
+- Decorators
+- F-strings
+- Augmented assignment
+- Comments
+- VS Code support
+
+## Keywords
+
+| Gugu | Purpose |
+|------|---------|
+| `gugugaga` | Class |
+| `gugu` | Function |
+| `goo` | If |
+| `goga` | Elif |
+| `gaa` | Else |
+| `guale` | While |
+| `guu` | For |
+| `gureak` | Break |
+| `gugugoo` | Continue |
+| `ga` | In |
+| `go` | As |
+| `gunot` | Not |
+| `guand` | And |
+| `guor` | Or |
+| `goat` | True |
+| `gusfand` | False |
+| `gua` | Variable definition |
+| `gaga` | Return |
+| `gagu` | From |
+| `guga` | Import |
+
+## Built-in Functions
+
+| Gugu | Purpose |
+|------|---------|
+| `gu` | Print |
+| `gug` | Input |
+| `gin` | Minimum |
+| `gax` | Maximum |
+| `guo` | Open a file |
+
+Example:
+
+```gugu
+gua x = guint(gug("Enter x: "))
+gua y = guint(gug("Enter y: "))
+
+gu(f"Maximum: {gax(x, y)}")
+gu(f"Minimum: {gin(x, y)}")
+```
+
+## Data Types
+
+| Gugu | Type |
+|------|------|
+| `guint` | Integer |
+| `gufloat` | Float |
+| `gudouble` | Double |
+| `gucomplex` | Complex |
+| `gubool` | Boolean |
+| `gustr` | String |
+| `gubytes` | Bytes |
+| `gubytearray` | Byte array |
+| `gumemoryview` | Memory view |
+| `gulist` | List |
+| `gutuple` | Tuple |
+| `gudict` | Dictionary |
+| `guset` | Set |
+| `gufrozenset` | Frozen set |
+
+## Functions
+
+```gugu
+gugu add(a, b):
+    gaga a + b
+
+gua result = add(10, 20)
+gu(result)
+```
+
+## Conditions
+
+```gugu
+goo score >= 90:
+    gu("Excellent!")
+goga score >= 60:
+    gu("Passed!")
+gaa:
+    gu("Failed!")
+```
+
+## Loops
+
+### For
+
+```gugu
+guu i ga range(5):
+    gu(i)
+```
+
+### While
+
+```gugu
+guale x > 0:
+    gu(x)
+    x -= 1
+```
+
+### Break and Continue
+
+```gugu
+guale goat:
+    gua value = gug()
+
+    goo value == "stop":
+        gureak
+
+    goo value == "":
+        gugugoo
+```
+
+## Classes
+
+```gugu
+gugugaga Person:
+
+    gugu hello(self, name):
+        gu(f"Hello, {name}!")
+
+gua person = Person()
+person.hello("Moon")
+```
+
+## Decorators
+
+Gugu provides its own decorator names:
+
+```text
+@gugustatic
+@guguclass
+@guguproperty
+```
+
+Example:
+
+```gugu
+gugugaga Math:
+
+    @gugustatic
+    gugu add(a, b):
+        gaga a + b
+
+gu(Math.add(5, 3))
+```
+
+## Imports
+
+Gugu supports multiple `.gugu` files.
+
+Example:
+
+```text
+project/
+├── main.gugu
+└── math.gugu
+```
+
+`math.gugu`:
+
+```gugu
+gugu add(a, b):
+    gaga a + b
+```
+
+`main.gugu`:
+
+```gugu
+gagu math guga add
+
+gu(add(5, 3))
+```
+
+Modules can also be imported directly:
+
+```gugu
+guga math
+```
+
+Aliases are supported:
+
+```gugu
+gagu math guga add go plus
+```
+
+## Strings
+
+Both single and double quotes are supported:
+
+```gugu
+gu("Hello")
+gu('Hello')
+```
+
+F-strings are supported:
+
+```gugu
+gua name = "Gugu"
+gua version = 1
+
+gu(f"{name} version {version}")
+```
+
+Expressions inside f-strings can use Gugu functions:
+
+```gugu
+gua x = 10
+gua y = 20
+
+gu(f"Max: {gax(x, y)}, Min: {gin(x, y)}")
+```
+
+## Comments
+
+Use `#` for comments:
+
+```gugu
+# This is a comment
+
+gu("Hello")
+```
+
+In VS Code, `Ctrl + /` toggles line comments for `.gugu` files.
+
+## VS Code
+
+Gugu includes a dedicated VS Code extension called **Gugugaga**.
+
+It provides:
+
+- `.gugu` file recognition
+- Syntax highlighting
+- Gugu file icons
+- Comment toggling
+- A Run button
+- Gugu execution support
+
+
+## Project Structure
+
+```text
+gugugaga/
+├── src/
+│   └── gugu/
+│       ├── __init__.py
+│       ├── lexer.py
+│       ├── parser.py
+│       ├── translator.py
+│       ├── importer.py
+│       └── cli.py
+│
+├── examples/
+│   └── ...
+│
+└── vscode/
+    └── gugugaga/
+        ├── package.json
+        ├── extension.js
+        ├── icon.png
+        ├── language-configuration.json
+        └── syntaxes/
+            └── gugu.tmLanguage.json
+```
+
+## Status
+
+Gugu is an experimental programming language under active development.
+
+The language and tooling are continuing to evolve.
+
+## Contributing
+
+Contributions, ideas, bug reports, and feature suggestions are welcome.
+
+When proposing a new feature, keep the language's core goal in mind:
+
+**Gugu should feel like its own language.**
+
+## License
+
+See the repository's license file for licensing information.

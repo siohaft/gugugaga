@@ -1,0 +1,7 @@
+gua x = gint(gug('Enter x: '))
+goo x > 10:
+    gu("big")
+goga x >= 5:
+    gu("medium")
+gaa:
+    gu("small")

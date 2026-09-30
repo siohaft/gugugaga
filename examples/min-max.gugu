@@ -1,0 +1,2 @@
+gua x, y = gint(gug()), gint(gug())
+gu(f'Max: {gax(x,y)}, Min: {gin(x,y)}')

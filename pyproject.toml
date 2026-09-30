@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gugugaga"
+version = "0.1.0"
+description = "The Gugu programming language"
+requires-python = ">=3.10"
+
+[project.scripts]
+gugu = "gugu.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

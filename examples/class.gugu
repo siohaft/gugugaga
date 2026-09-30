@@ -1,0 +1,24 @@
+gugugaga Person:
+
+    @gugustatic
+    gugu add(a, b):
+        gaga a + b
+
+    @guguclass
+    gugu create(cls, name):
+        gu("Creating person: " + name)
+        gaga cls()
+
+    @guguproperty
+    gugu species(self):
+        gaga "Human"
+
+
+gua result = Person.add(10, 5)
+gu("Static method result:", result)
+
+gua person = Person()
+
+gua created = Person.create("siohaft")
+
+gu("Property:", person.species)

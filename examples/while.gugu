@@ -1,0 +1,4 @@
+gua x = guint(gug())
+guale x > 0:
+    gu('gugugaga')
+    x -= 1

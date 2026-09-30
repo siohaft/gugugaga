@@ -1,0 +1,12 @@
+pyproject.toml
+src/gugu/__init__.py
+src/gugu/cli.py
+src/gugu/importer.py
+src/gugu/lexer.py
+src/gugu/parser.py
+src/gugu/translator.py
+src/gugugaga.egg-info/PKG-INFO
+src/gugugaga.egg-info/SOURCES.txt
+src/gugugaga.egg-info/dependency_links.txt
+src/gugugaga.egg-info/entry_points.txt
+src/gugugaga.egg-info/top_level.txt

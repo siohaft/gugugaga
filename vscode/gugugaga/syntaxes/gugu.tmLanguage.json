@@ -1,0 +1,120 @@
+{
+    "scopeName": "source.gugu",
+    "patterns": [
+        {
+            "include": "#comments"
+        },
+        {
+            "include": "#strings"
+        },
+        {
+            "include": "#decorators"
+        },
+        {
+            "include": "#keywords"
+        },
+        {
+            "include": "#builtins"
+        },
+        {
+            "include": "#types"
+        },
+        {
+            "include": "#numbers"
+        },
+        {
+            "include": "#function-definitions"
+        }
+    ],
+    "repository": {
+        "comments": {
+            "patterns": [
+                {
+                    "name": "comment.line.number-sign.gugu",
+                    "match": "#.*$"
+                }
+            ]
+        },
+
+        "strings": {
+            "patterns": [
+                {
+                    "name": "string.quoted.double.gugu",
+                    "begin": "\"",
+                    "end": "\"",
+                    "patterns": [
+                        {
+                            "name": "constant.character.escape.gugu",
+                            "match": "\\\\."
+                        }
+                    ]
+                },
+                {
+                    "name": "string.quoted.single.gugu",
+                    "begin": "'",
+                    "end": "'",
+                    "patterns": [
+                        {
+                            "name": "constant.character.escape.gugu",
+                            "match": "\\\\."
+                        }
+                    ]
+                }
+            ]
+        },
+
+        "decorators": {
+            "patterns": [
+                {
+                    "name": "entity.name.function.decorator.gugu",
+                    "match": "@(gugustatic|guguclass|guguproperty)\\b"
+                }
+            ]
+        },
+
+        "keywords": {
+            "patterns": [
+                {
+                    "name": "keyword.control.gugu",
+                    "match": "\\b(gugugaga|gugu|goo|goga|gaa|guale|guu|gureak|gugugoo|ga|go|gunot|guand|guor|goat|gusfand|gaga|gagu|guga|gua)\\b"
+                }
+            ]
+        },
+
+        "builtins": {
+            "patterns": [
+                {
+                    "name": "support.function.gugu",
+                    "match": "\\b(gu|gug|gin|gax|guo)\\b"
+                }
+            ]
+        },
+
+        "types": {
+            "patterns": [
+                {
+                    "name": "storage.type.gugu",
+                    "match": "\\b(guint|gufloat|gudouble|gucomplex|gubool|gustr|gubytes|gubytearray|gumemoryview|gulist|gutuple|gudict|guset|gufrozenset)\\b"
+                }
+            ]
+        },
+
+        "numbers": {
+            "patterns": [
+                {
+                    "name": "constant.numeric.gugu",
+                    "match": "\\b\\d+(\\.\\d+)?\\b"
+                }
+            ]
+        },
+
+        "function-definitions": {
+            "patterns": [
+                {
+                    "name": "entity.name.function.gugu",
+                    "match": "(?<=\\bgugu\\s)\\w+"
+                }
+            ]
+        }
+    }
+}

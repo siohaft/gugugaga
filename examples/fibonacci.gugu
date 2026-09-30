@@ -1,0 +1,9 @@
+gugu fib(x):
+    goo x == 0:
+        gaga 0
+    goga x ga [1, 2]:
+        gaga 1
+    gaa:
+        gaga fib(x - 1) + fib(x - 2)
+gua x = gint(gug('Enter x: '))
+gu(fib(x))
