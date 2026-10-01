@@ -4,8 +4,9 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gugugaga"
-version = "0.1.0"
+version = "0.1.4"
 description = "The Gugu programming language"
+readme = "README.md"
 requires-python = ">=3.10"
 
 [project.scripts]
@@ -13,3 +14,9 @@ gugu = "gugu.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[project.urls]
+Homepage = "https://github.com/siohaft/gugugaga"
+Repository = "https://github.com/siohaft/gugugaga"
+Documentation = "https://github.com/siohaft/gugugaga#readme"
+Issues = "https://github.com/siohaft/gugugaga/issues"

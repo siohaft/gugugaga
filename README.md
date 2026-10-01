@@ -2,7 +2,8 @@
 
 <p align="center">
   <!-- <img src="icon-raw.png" width="128" alt="Gugu"> -->
-  <img src="icon-raw.png" alt="Gugu">
+  <!-- <img src="icon-raw.png" alt="Gugu"> -->
+  <img src="https://github.com/siohaft/gugugaga/blob/main/icon-raw.png?raw=true" alt="Gugu">
 </p>
 
 <p align="center">

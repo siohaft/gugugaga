@@ -3,9 +3,17 @@
     "displayName": "Gugugaga",
     "description": "Syntax highlighting and execution support for the Gugu programming language",
     "version": "0.1.0",
-    "publisher": "gugugaga",
+    "publisher": "SioHaft",
     "icon": "icon.png",
     "main": "./extension.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/siohaft/gugugaga.git"
+    },
+    "homepage": "https://github.com/siohaft/gugugaga",
+    "bugs": {
+        "url": "https://github.com/siohaft/gugugaga/issues"
+    },
     "engines": {
         "vscode": "^1.90.0"
     },
