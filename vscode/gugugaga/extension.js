@@ -33,13 +33,22 @@ function activate(context) {
                     return;
                 }
 
-                // Gugu is installed, so run the file.
-                const terminal = vscode.window.createTerminal("Gugu");
+                // Reuse an existing terminal if one is already open.
+                // Prefer the active terminal, otherwise use the first one.
+                let terminal =
+                    vscode.window.activeTerminal ||
+                    vscode.window.terminals[0];
+
+                // Create a terminal only if none are open.
+                if (!terminal) {
+                    terminal = vscode.window.createTerminal("Gugu");
+                }
 
                 terminal.show();
 
                 terminal.sendText(
-                    `gugu "${filePath}"`
+                    `gugu "${filePath}"`,
+                    true
                 );
             });
         }

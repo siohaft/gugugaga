@@ -2,7 +2,7 @@
     "name": "gugugaga",
     "displayName": "Gugugaga",
     "description": "Syntax highlighting and execution support for the Gugu programming language",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "publisher": "SioHaft",
     "icon": "icon.png",
     "main": "./extension.js",

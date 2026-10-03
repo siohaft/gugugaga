@@ -3,6 +3,7 @@ README.md
 pyproject.toml
 src/gugu/__init__.py
 src/gugu/cli.py
+src/gugu/colors.py
 src/gugu/importer.py
 src/gugu/lexer.py
 src/gugu/parser.py
