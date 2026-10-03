@@ -8,6 +8,8 @@ Project-URL: Documentation, https://github.com/siohaft/gugugaga#readme
 Project-URL: Issues, https://github.com/siohaft/gugugaga/issues
 Requires-Python: >=3.10
 Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
 
 # Gugugaga
 
