@@ -5,5 +5,5 @@ gugu fib(x):
         gaga 1
     gaa:
         gaga fib(x - 1) + fib(x - 2)
-gua x = gint(gug('Enter x: '))
+gua x = guint(gug('Enter x: '))
 gu(fib(x))

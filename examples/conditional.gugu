@@ -1,4 +1,4 @@
-gua x = gint(gug('Enter x: '))
+gua x = guint(gug('Enter x: '))
 goo x > 10:
     gu("big")
 goga x >= 5:
